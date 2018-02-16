@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<link rel="canonical" href="" />
+		<!-- Custom Fonts -->
+
+		<!--bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--css-->
+		<link rel="stylesheet" href="main.css">
+		<!--favicon-->
+		<link rel="shortcut icon" href="" />
+		<!--analitika-->
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="holderpositions">
+				<div class="smallerw">
+					<h2>Cupcake ipsum dolor sit</h2>
+					<p>Cupcake ipsum dolor sit. Amet toffee biscuit. Tart cake macaroon cupcake sweet roll danish. Brownie cake candy canes I love jelly beans dragée tootsie roll pastry jelly beans. </p>
+					<a class="start" href="#">Start</a>
+				</div>
+				<div class="window">
+					<div class="drzac">
+						<div class="biggerw" id="jedan">
+							<p>Cupcake ipsum dolor sit. Amet toffee biscuit. Tart cake macaroon cupcake sweet roll danish. Brownie cake candy canes I love jelly beans dragée tootsie roll pastry jelly beans. Cupcake ipsum dolor sit. Amet toffee biscuit. Tart cake macaroon cupcake sweet roll danish. Brownie cake candy canes I love jelly beans dragée tootsie roll pastry jelly beans. </p>
+
+							<a class="next" href="#">Next</a>
+						</div>
+						<div class="biggerw" id="dva">
+							<div class="form-group">
+							  <label for="usr">First name:</label>
+							  <input type="text" class="form-control siroka_forma" id="usr">
+							</div>
+							<div class="form-group">
+							  <label for="pwd">Last name:</label>
+							  <input type="text" class="form-control siroka_forma" id="pwd">
+							</div>
+							<div class="form-group">
+								<label for="pwd">Email:</label>
+								<input type="text" class="form-control siroka_forma" id="pwd">
+							</div>
+							<a class="prev" href="#">Back</a>
+							<a class="next" href="#">Next</a>
+						</div>
+						<div class="biggerw" id="tri">
+							<p>Cupcake ipsum dolor sit. Amet toffee biscuit. Tart cake macaroon cupcake sweet roll danish.</p>
+							<div class="form-group">
+							  <label for="comment">Your message:</label>
+							  <textarea class="form-control siroka_forma" rows="5" id="comment"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputFile">Upload a photo</label>
+								<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+							</div>
+							<a class="prev" href="#">Back</a>
+							<a class="next" href="#">Next</a>
+						</div>
+						<div class="biggerw" id="cetiri">
+							<p>Your messages have been successfully sent </p>
+							<a class="prev" href="#">Back</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		<!--js-->
+		$(".start").click(function(){
+
+			$(".biggerw").addClass('prikaz');
+		});
+		$(".next").click(function(){
+				$('.drzac').animate({ marginLeft: '-=100%'}, 1000);
+			});
+		$(".prev").click(function(){
+				$('.drzac').animate({ marginLeft: '+=100%'}, 1000);
+			});
+		</script>
+
+	</body>
+</html>
